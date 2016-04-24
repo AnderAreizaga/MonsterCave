@@ -14,6 +14,7 @@ typedef struct{
 	int codSala; //de 0 a 29
 	int tipo; // 0: Adivinanza 1: Pelea 2: No recuerdo, igual era sala de movimiento simple
 	// char* resCorrecta;
+	int respuestaCorr;
 	char** textosDeSala;  // Son normalmente 1º estado de presentacion, 2º estado de fallido(respuesta incorrecta) 3º puedes seguir
 	//en el caso de sala de monstruos el estado 2 se repite hasta que la vida del monstruo tenga 0 vida
 	//el cambio de sala siempre es aleatorio

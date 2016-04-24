@@ -32,6 +32,9 @@ void cargarSalas(Sala *puntS)
 		puntS[j].tipo=atoi(line);
 //		printf("%i\n",puntS[j].tipo);
 
+		fgets(line,280,salas);
+		puntS[j].respuestaCorr=atoi(line);
+
 		puntS[j].textosDeSala=malloc(sizeof(char)*1000);
 		int i=0;
 		do{

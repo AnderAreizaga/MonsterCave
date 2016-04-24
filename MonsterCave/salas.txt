@@ -1,17 +1,47 @@
+0
 1
-1
+0
 Te has encontrado con un mega monstruo feo el mega penexorus
 HAS FALLADO, PERECE EN LA MAZMORRA
 VICTORIA,NO OLVIDES TU TOALLA
-Pene1
-Pene2
-Pene3
 #
 
 1
 0
+2
 Llegas en frente de un estatua ¿que haces?
 Se abre una puerta y puedes seguir
-Se abre una trampa debajo de ti y caes a tu muerte
+Dardos salen de los ojos de la estatua.
+Estas intrigado y la tocas.
+La observas y sigues caminando.
+Le saludas.
+#
+
+2
+0
+1
+Llegas delante de un hombre bloqueando la salida te pregunta:¿Que es oro por fuera y blanco por dentro?
+Asiente y se aparta dejandote pasar
+Te hechiza y dice Vuelve a intentar!!
+EL PLATANO
+¿Una pista?
+No tengo tiempo dejame pasar!
+#
+
+3
+0
+2
+FRASE DE ENTRADA
+FRASE DE VICTORIA
+FRASE DE DERROTA
+OPCION 1
+OPCION 2
+OPCION 3
+#
+
+4
+2
+0
+Llegas donde un Ada y dice: Hey listen! *Te cura*
 #
 @
