@@ -1,0 +1,13 @@
+Goblin
+1
+20
+3
+5
+Devuelveme mi lata sucio ladron
+Orco
+2
+40
+5
+2
+Orco pegar con palo
+&

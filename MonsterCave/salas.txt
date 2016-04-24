@@ -1,0 +1,14 @@
+0
+0
+Llegas delante de un hombre con una larga barba y te pergunta ¿hola?
+Noooo
+Muy bien gracias
+#
+
+0
+0
+Llegas en frente de un estatua ¿que haces?
+Se abre una puerta y puedes seguir
+Se abre una trampa debajo de ti y caes a tu muerte
+#
+@
