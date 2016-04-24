@@ -1,11 +1,14 @@
-0
-0
-Llegas delante de un hombre con una larga barba y te pergunta ¿hola?
-Noooo
-Muy bien gracias
+1
+1
+Te has encontrado con un mega monstruo feo el mega penexorus
+HAS FALLADO, PERECE EN LA MAZMORRA
+VICTORIA,NO OLVIDES TU TOALLA
+Pene1
+Pene2
+Pene3
 #
 
-0
+1
 0
 Llegas en frente de un estatua ¿que haces?
 Se abre una puerta y puedes seguir
