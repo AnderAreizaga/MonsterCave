@@ -16,12 +16,13 @@ void inicializarArrayMonstruos(Monstruo* monstruos){
 	fichero = fopen("monstruo/Monstruos.txt", "r");
 	int i=0;
 	int x=0;
+	int z=0;
 	do{
 		fgets(nom, 10, fichero);
-		if(nom[0]!='&'){
+		if(nom[0]!='&'&&nom[0]!='%'){
 			m.nombre=malloc(sizeof(char)*strlen(nom));
 			int a=0;
-			for(;a<strlen(nom)+1;a++)
+			for(a=0;a<strlen(nom)+1;a++)
 			{
 				m.nombre[a]=nom[a];
 			}
@@ -33,13 +34,28 @@ void inicializarArrayMonstruos(Monstruo* monstruos){
 			m.ataque = atoi(str);
 			fgets(str, 10, fichero);
 			m.resistencia = atoi(str);
-			fgets(str, 199, fichero);
-			//m.interacciones[0] = str;
+			int y=0;
+			m.interacciones=malloc(sizeof(char)*1000);
+			do{
+				fgets(str, 199, fichero);
+				if(str[0]!='%'&&str[0]!='&'){
+					m.interacciones[z]=malloc(strlen(str)+1);
+					for(a=0;a<strlen(str)+1;a++)
+					{
+						m.interacciones[z][a]=str[a];
+					}
+					z++;
+				}
+				else if(str[0]=='&'){
+					y=1;
+					i=1;
+				}
+				else{
+					y=1;
+				}
+			}while(y==0);
 			monstruos[x] = m;
 			x++;
-		}
-		else if(nom[0]=='&'){
-			i=1;
 		}
 	}while(i==0);
 }

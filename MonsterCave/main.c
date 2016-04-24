@@ -290,7 +290,7 @@ int main()
 	inicializarArrayMonstruos(monstruos);
 
 
-//	//Bucle constante
+	//Bucle constante
 	while (pl.vida>=1 && pl.numerodesalas<=6)
 	{
 		nuevasala(&pl ,s , monstruos);
