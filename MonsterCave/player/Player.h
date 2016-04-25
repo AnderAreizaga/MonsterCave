@@ -20,8 +20,17 @@ typedef struct
 	int historia[6];
 }Player;
 
+typedef struct
+{
+
+	char** frases;
+
+}Historia;
+
 void crearPlayer(Player* pl);
 void printPlayer(Player pl);
+void printHistoria(Player* pl,Historia* historia);
+void cargarHistoria(Historia* historia);
 void guardarPlayer();
 void clearIfNeeded(char *str, int max_line);
 

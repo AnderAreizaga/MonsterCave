@@ -46,6 +46,68 @@ void clearIfNeeded(char *str, int max_line)
 		while (getchar() != '\n');
 }
 
+void printHistoria(Player* pl, Historia* historia)
+{
+	FILE *fichero;
+	fichero = fopen("tuHistoria.txt", "w");
+
+	fprintf(fichero,"Era una oscura mañana de otoño, %s se disponía a empezar su primer dia en su nuevo trabajo.\nEra su oportunidad de servir a la sociedad y por primera vez cumplir su sueño  de ser un héroe,\nalguien que combatiera el mal y salvara al mundo varias veces. Pero sin embargo no era tal\ny como se esperaba, barrer el suelo en la taberna más sucia del barrio no era tan emocionante como pensaba que sería\ncuando le dijeron que su misión principal sería combatir la suciedad con esa escoba. Pero un día unos mercenarios entraron\nmientras él trabajaba, llegaron con el objetivo de cumplir la mision mas dificil que podría\nhaber llegado a los oídos de nuestro protagonista: ''Rescatar la gallina de los huevos dorados''\n"
+,pl->name);
+
+	int i=0;
+	for(;i<pl->numerodesalas;i++)
+	{
+		fprintf(fichero,"%s",historia[(pl->historia[i]-1)].frases[0]);
+		if(i<pl->numerodesalas-1){
+			fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[1]);
+		}else{
+			fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[2]);
+		}
+
+	}
+
+	fclose(fichero);
+}
+
+void cargarHistoria(Historia* historia)
+{
+	char str[280];
+	FILE *fichero;
+	fichero = fopen("historia.txt", "r");
+
+	int i=0;
+		int x=0;
+
+		do{
+			int z=0;
+			fgets(str, 10, fichero);
+			if(str[0]!='&'&&str[0]!='%'){
+				int y=0;
+				historia[x].frases=malloc(sizeof(char)*1000);
+				do{
+					fgets(str, 199, fichero);
+					if(str[0]!='%'&&str[0]!='&'){
+						historia[x].frases[z]=malloc(strlen(str)+1);
+						int a=0;
+						for(;a<strlen(str)+1;a++)
+						{
+							historia[x].frases[z][a]=str[a];
+						}
+						z++;
+					}
+					else if(str[0]=='&'){
+						y=1;
+						i=1;
+					}
+					else{
+						y=1;
+					}
+				}while(y==0);
+				x++;
+			}
+		}while(i==0);
+}
+
 void guardarPlayer(){
 
 }

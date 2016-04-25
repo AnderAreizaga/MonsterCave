@@ -11,16 +11,16 @@
 void inicializarArrayMonstruos(Monstruo* monstruos){
 	Monstruo m;
 	char str[200];
-	char nom[10];
+	char nom[25];
 	FILE *fichero;
 	fichero = fopen("monstruo/Monstruos.txt", "r");
 	int i=0;
 	int x=0;
 	int z=0;
 	do{
-		fgets(nom, 10, fichero);
+		fgets(nom, 25, fichero);
 		if(nom[0]!='&'&&nom[0]!='%'){
-			m.nombre=malloc(sizeof(char)*strlen(nom));
+			m.nombre=malloc(sizeof(char)*(strlen(nom)+5));
 			int a=0;
 			for(a=0;a<strlen(nom)+1;a++)
 			{
@@ -35,23 +35,25 @@ void inicializarArrayMonstruos(Monstruo* monstruos){
 			fgets(str, 10, fichero);
 			m.resistencia = atoi(str);
 			int y=0;
-			m.interacciones=malloc(sizeof(char)*1000);
+			m.interacciones=malloc(sizeof(char)*2000);
 			do{
 				fgets(str, 199, fichero);
 				if(str[0]!='%'&&str[0]!='&'){
-					m.interacciones[z]=malloc(strlen(str)+1);
+					m.interacciones[z]=malloc(strlen(str)+3);
 					for(a=0;a<strlen(str)+1;a++)
 					{
 						m.interacciones[z][a]=str[a];
 					}
-					z++;
 				}
 				else if(str[0]=='&'){
 					y=1;
 					i=1;
 				}
-				else{
+				else if(str[0]=='%'){
 					y=1;
+				}
+				else{
+					z++;
 				}
 			}while(y==0);
 			monstruos[x] = m;
