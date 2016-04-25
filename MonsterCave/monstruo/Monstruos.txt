@@ -1,14 +1,49 @@
 Goblin
 0
-20
+100
 3
 5
 Devuelveme mi lata sucio ladron
 %
 Orco
-2
-40
+1
+150
 5
 2
 Orco pegar con palo
+%
+Progenitus
+2
+200
+3
+5
+Goaarrg
+%
+Cucaracha
+3
+250
+3
+5
+Gush Gush
+%
+Pikachu
+4
+300
+3
+5
+Pika?Pika?
+%
+SonGoku
+5
+400
+3
+5
+TE DERROTARE FREEZER
+%
+Krillin
+6
+10
+3
+5
+Si me matas reviviree
 &

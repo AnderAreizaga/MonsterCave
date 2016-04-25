@@ -64,16 +64,16 @@ void nuevasala( Player* p, Sala* s, Monstruo* m)
 	 if (p->numerodesalas <= 6)
 	 {
 //A donde quieres ir
-//		printf("¿Por donde deseas ir? N/S/E/W /n");
-//		fflush(stdout);
-//		char r;
-//		while (r != 'N' || r != 'S' || r != 'E' || r != 'W' || r != 'n'
-//				|| r != 's' || r != 'e' || r != 'w')
-//		{
-//
-//			r = getchar();
-//			fflush(stdin);
-//		}
+		printf("¿Por donde deseas ir? N/S/E/W /n");
+		fflush(stdout);
+		char r;
+		while (r != 'N' && r != 'S' && r != 'E' && r != 'W' && r != 'n'
+				&& r != 's' && r != 'e' && r != 'w')
+		{
+
+			r = getchar();
+			fflush(stdin);
+		}
 
 		if (s[numSala].tipo == 0)// SAla de adivinanza
 		{
@@ -86,35 +86,42 @@ void nuevasala( Player* p, Sala* s, Monstruo* m)
 			printf("Sala %d: \n %s  \n", numSala + 1, s[numSala].textosDeSala[0]);
 			fflush(stdout);
 
-		    int array[3];
-		    int x, o;
+//		    int array[3];
+//		    int x, o;
+//
+//		    int i=0;
+//		    srand(time(NULL));
+//		    while (i < 3)
+//		    {
+//				int r = rand() % 3;
+//
+//				for (x = 0; x < i; x++)
+//				{
+//					if (array[x] == r)
+//					{
+//						break;
+//					}
+//				}
+//				if (x == i)
+//				{
+//					array[i++] = r;
+//				}
+//			}
+//			for (o = 0; o < 3; o++)
+//			{
+//			printf("Opcion %i %s \n" ,o + 1  , s[numSala].textosDeSala[array[o]+3] );
+//			fflush(stdout);
+//			sleep(1);
+//			}
 
-		    int i=0;
-		    srand(time(NULL));
-		    while (i < 3)
-		    {
-				int r = rand() % 3;
-
-				for (x = 0; x < i; x++)
-				{
-					if (array[x] == r)
-					{
-						break;
-					}
-				}
-				if (x == i)
-				{
-					array[i++] = r;
-				}
-			}
-			for (o = 0; o < 3; o++)
-			{
-			printf("Opcion %i %s \n" ,o + 1  , s[numSala].textosDeSala[array[o]+3] );
+			printf("Opcion 1 %s \n", s[numSala].textosDeSala[3]);
 			fflush(stdout);
-			sleep(1);
-			}
+			printf("Opcion 2 %s \n", s[numSala].textosDeSala[4]);
+			fflush(stdout);
+			printf("Opcion 3 %s \n", s[numSala].textosDeSala[5]);
+			fflush(stdout);
 			int elec;
-			int corr = rand() % 3+1;
+			int corr = s[numSala].respuestaCorr;
 			do{
 
 
@@ -124,14 +131,14 @@ void nuevasala( Player* p, Sala* s, Monstruo* m)
 			fflush(stdin);
 			printf("\n");
 			fflush(stdout);
-				if(corr!=elec)
-				{
+			if(corr!=elec)
+			{
 					printf("%s \n", s[numSala].textosDeSala[1]);
 					fflush(stdout);
 					printf("Pierdes 20 de vida\n");
 					fflush(stdout);
 					p->vida=p->vida-20;
-				}
+			}
 
 			}while(corr!=elec);
 			system("cls");
@@ -215,30 +222,39 @@ void nuevasala( Player* p, Sala* s, Monstruo* m)
 					vida=vida-20;
 					printf("Dañas al monstruo con tu legendaria espadad de madera ");
 					fflush(stdout);
-					sleep(3);
+					sleep(2);
 					p->vida = p->vida - 10;
-					printf("Sin embargo se astilla y recibes daño ");
+					printf("Sin embargo el monstruo te goplpea y obviamente recibes daño. ");
 					fflush(stdout);
-
+					sleep(1);
 
 					break;
 
 				case 2:
 					vida=vida-15;
-					printf("Conjuras una gran llama de fuego, el animal daña al monstruo, ");
+					printf("Conjuras una gran llama, el animal daña al monstruo, ");
 					fflush(stdout);
 					p->vida = p->vida - 7;
-					printf("Sin embargo se astilla y recibes daño ");
-					sleep(3);
+					sleep(2);
+					printf("te escupe y te da asco, genial, ahora tienes baba de llama. ");
+					sleep(1);
 					break;
 				case 3:
 					vida=vida-5;
+					printf("Enfrias la sala muchisimo, ");
+					sleep(2);
 					p->vida = p->vida - 3;
-
-
+					printf(",genial ahora tienes un resfriado! ");
+					sleep(1);
 					break;
 				case 4:
+					printf("Aparece un obispo que te echa agua bendita, se curan tus heridas, \nun poco, mas bien casi nada, digamos que es placebo ");
+					sleep(1);
 					p->vida = p->vida + 20;
+					if(p->vida>100)
+					{
+						p->vida = 100;
+					}
 
 					break;
 				default:
