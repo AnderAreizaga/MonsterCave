@@ -17,7 +17,7 @@ typedef struct
 	int carisma;
 	int vida;
 	int numerodesalas;
-	int historia[6];
+	int historia[7];
 }Player;
 
 typedef struct

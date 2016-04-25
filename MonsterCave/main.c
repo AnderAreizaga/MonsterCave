@@ -66,11 +66,12 @@ void creaHistoria(Player* p)
 void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 {
 
+	int numSala;
+	if(p->numerodesalas<6){
+		numSala = p->historia[p->numerodesalas]-1 ;
+	}
 
-	int numSala = p->historia[p->numerodesalas]-1 ;
-
-
-	if (p->numerodesalas <= 6)
+	if (p->numerodesalas < 6)
 	{
 		//A donde quieres ir
 		printf("¿Por donde deseas ir? N/S/E/W \n");
@@ -172,7 +173,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 				}
 				//Print de la vida
-				printf("%s \n", m[i].nombre);
+				printf("\n%s \n", m[i].nombre);
 				printf("Vida del monstruo :");
 				fflush(stdout);
 				int j=0;
@@ -313,9 +314,33 @@ int main()
 
 	fflush(stdout);
 
+	printf("Life of %s \n\n", pl.name);
+	fflush(stdout);
+	sleep(1);
+	printf("Era una oscura mañana de otoño, %s se disponía a empezar su primer dia en su nuevo trabajo.\n",pl.name);
+	fflush(stdout);
+	sleep(1);
+	printf("Era su oportunidad de servir a la sociedad y por primera vez cumplir su sueño  de ser un héroe,\n");
+	fflush(stdout);
+	sleep(1);
+	printf("alguien que combatiera el mal y salvara al mundo varias veces. Pero sin embargo no era tal\n");
+	fflush(stdout);
+	sleep(1);
+	printf("y como se esperaba, barrer el suelo en la taberna más sucia del barrio no era tan emocionante como pensaba que sería\n");
+	fflush(stdout);
+	sleep(1);
+	printf("cuando le dijeron que su misión principal sería combatir la suciedad con esa escoba. Pero un día unos mercenarios entraron\n");
+	fflush(stdout);
+	sleep(1);
+	printf("mientras él trabajaba, llegaron con el objetivo de cumplir la mision mas dificil que podría\n");
+	fflush(stdout);
+	sleep(1);
+	printf("haber llegado a los oídos de nuestro protagonista: ''Rescatar la gallina de los huevos dorados''\n");
+	fflush(stdout);
+	sleep(1);
 
 //	Bucle constante
-	while (pl.vida>=1 && pl.numerodesalas<=6)
+	while (pl.vida>=1 && pl.numerodesalas<6)
 	{
 		logicaUpdate(&pl ,s , monstruos);
 
