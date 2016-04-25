@@ -1,9 +1,10 @@
-0
+
 Se encuentra con un monstruo, con una cara bastante desagradable,
 despues de una larga pelea sale vitorioso.
 tras un par de garrotazos del monstruo se queda tirado sin vida.
 %
-1
+
 Tras caminar un poco llega a una sala con una estatua de un mono,
 se queda un rato observandola y sigue su camino.
 intrigado la toca y se abre una trampa justo debajo y cae hasta su muerte.
+&
