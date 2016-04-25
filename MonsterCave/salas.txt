@@ -1,11 +1,3 @@
-0
-1
-0
-Te has encontrado con un mega monstruo feo el mega penexorus
-HAS FALLADO, PERECE EN LA MAZMORRA
-VICTORIA,NO OLVIDES TU TOALLA
-#
-
 1
 0
 2
@@ -18,6 +10,14 @@ Le saludas.
 #
 
 2
+1
+0
+Te has encontrado con un mega monstruo feo el mega penexorus
+HAS FALLADO, PERECE EN LA MAZMORRA
+VICTORIA,NO OLVIDES TU TOALLA
+#
+
+3
 0
 1
 Llegas delante de un hombre bloqueando la salida te pregunta:¿Que es oro por fuera y blanco por dentro?
@@ -28,7 +28,7 @@ EL PLATANO
 No tengo tiempo dejame pasar!
 #
 
-3
+4
 0
 2
 FRASE DE ENTRADA
@@ -37,23 +37,12 @@ FRASE DE DERROTA
 OPCION 1
 OPCION 2
 OPCION 3
-#
-
-4
-2
-0
-Llegas donde un Ada y dice: Hey listen! *Te cura*
 #
 
 5
-0
 2
-FRASE DE ENTRADA
-FRASE DE VICTORIA
-FRASE DE DERROTA
-OPCION 1
-OPCION 2
-OPCION 3
+0
+Llegas donde un Ada y dice: Hey listen! *Te cura*
 #
 
 6
@@ -76,8 +65,8 @@ FRASE DE DERROTA
 OPCION 1
 OPCION 2
 OPCION 3
-
 #
+
 8
 0
 2
@@ -87,8 +76,8 @@ FRASE DE DERROTA
 OPCION 1
 OPCION 2
 OPCION 3
-#
 
+#
 9
 0
 2

@@ -1,48 +1,48 @@
 Goblin
-0
+2
 100
 3
 5
 Devuelveme mi lata sucio ladron
 %
 Orco
-1
+4
 150
 5
 2
 Orco pegar con palo
 %
 Progenitus
-2
+6
 200
 3
 5
 Goaarrg
 %
 Cucaracha
-3
+8
 250
 3
 5
 Gush Gush
 %
 Pikachu
-4
+10
 300
 3
 5
 Pika?Pika?
 %
 SonGoku
-5
+12
 400
 3
 5
 TE DERROTARE FREEZER
 %
 Krillin
-6
-10
+14
+30
 3
 5
 Si me matas reviviree

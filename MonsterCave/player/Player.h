@@ -12,7 +12,6 @@
 typedef struct
 {
 	char* name;
-	//char name[10];
 	int fuerza;
 	int inteligencia;
 	int carisma;
