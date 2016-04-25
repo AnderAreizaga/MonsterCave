@@ -176,7 +176,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 				printf("Vida del monstruo :");
 				fflush(stdout);
 				int j=0;
-				for(;j<vida;j++)
+				for(;j<vida/10;j++)
 				{
 					printf("|");
 					fflush(stdout);
@@ -184,7 +184,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 				printf("\n%s:",p->name);
 
 				int k=0;
-				for(;k<p->vida;k++)
+				for(;k<p->vida/10;k++)
 				{
 					printf("|");
 					fflush(stdout);
