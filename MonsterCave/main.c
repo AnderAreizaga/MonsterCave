@@ -10,6 +10,9 @@
 #include "sala/sala.h"
 #include "monstruo/monstruo.h"
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 void printFile(char *name)
 {
@@ -29,35 +32,38 @@ void printFile(char *name)
 	fclose(fichero);
 
 }
+void creaHistoria(Player* p)
+{
+	int x ;
+	int j;
+	int i=0;
 
-void nuevasala( Player* p, Sala* s, Monstruo* m)
+	while (i < 6)
+	{
+		int r = rand() % 15 + 1 ;
+
+		for (x = 0; x < i; x++)
+		{
+			if (p->historia[x] == r)
+			{
+				break;
+			}
+		}
+		if (x == i)
+		{
+			p->historia[i++] = r+1;
+		}
+	}
+	for (j = 0; j < 6; j++)
+	{
+		printf("%i ", p->historia[j]);
+	}
+}
+void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 {
 
 	// elige una sala aleatoria
-	int numSala = 0 ;//= rand() % 15;
-
-//	    int t;
-//	    int count;
-//	    int i=0;
-//
-//
-//
-//	    while (i < 15)
-//	    {
-//			int r = rand() % 15;
-//
-//			for (t = 0; t < i; t++)
-//			{
-//				if (p->historia[t] == r)
-//				{
-//					break;
-//				}
-//			}
-//			if (t == i)
-//			{
-//				p->historia[t] = r;
-//			}
-//		}
+	int numSala = p->historia[p->numerodesalas] ;//= rand() % 15;
 
 
 
@@ -86,27 +92,7 @@ void nuevasala( Player* p, Sala* s, Monstruo* m)
 			printf("Sala %d: \n %s  \n", numSala + 1, s[numSala].textosDeSala[0]);
 			fflush(stdout);
 
-//		    int array[3];
-//		    int x, o;
-//
-//		    int i=0;
-//		    srand(time(NULL));
-//		    while (i < 3)
-//		    {
-//				int r = rand() % 3;
-//
-//				for (x = 0; x < i; x++)
-//				{
-//					if (array[x] == r)
-//					{
-//						break;
-//					}
-//				}
-//				if (x == i)
-//				{
-//					array[i++] = r;
-//				}
-//			}
+
 //			for (o = 0; o < 3; o++)
 //			{
 //			printf("Opcion %i %s \n" ,o + 1  , s[numSala].textosDeSala[array[o]+3] );
@@ -318,11 +304,11 @@ int main()
 	Monstruo* monstruos=malloc(sizeof(Monstruo)*10);;
 	inicializarArrayMonstruos(monstruos);
 
-
+	creaHistoria(&pl);
 	//Bucle constante
 	while (pl.vida>=1 && pl.numerodesalas<=6)
 	{
-		nuevasala(&pl ,s , monstruos);
+		logicaUpdate(&pl ,s , monstruos);
 
 	}
 	printf("----------------- HAS LLEGADO A LA SALIDA, ENHORABUENA ----------------");
