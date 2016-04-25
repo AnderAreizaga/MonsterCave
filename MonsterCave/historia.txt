@@ -1,42 +1,42 @@
 
-Se encuentra con un monstruo, con una cara bastante desagradable,
-despues de una larga pelea sale vitorioso.
-tras un par de garrotazos del monstruo se queda tirado sin vida.
-%
-
 Tras caminar un poco llega a una sala con una estatua de un mono,
 se queda un rato observandola y sigue su camino.
 intrigado la toca y se abre una trampa justo debajo y cae hasta su muerte.
 %
 
-Sala3
-pene1
-pene2
+Se encuentra con un monstruo, con una cara bastante desagradable,
+despues de una larga pelea sale vitorioso.
+tras un par de garrotazos del monstruo se queda tirado sin vida.
 %
 
-Sala4
-pene1
-pene2
+Entra en una sala donde se encuentra un hombre de cierta edad con una larga barba, sin esperar pergunta ¿Que es oro por fuera y blanco por dentro?
+Nuestro heroe sin pensarselo dos veces grita "el PLATANO!". EL hombre asiente y le deja el paso libre.
+*Piensa* pero no sabe contestar y el hombre termina por hechizarle.
 %
 
-Sala5
-pene1
-pene2
+Se adentra en una sala oscura, donde se perciven dos siluetas, una de ellas sale corriendo hacia ti haciendo suficientemente ruido para que la segunda silueta se de la vuelta gritando: MI LATA!
+El goblin aunque motivado para recuperar su lata, tras un par de golpes se queda inconsciente.
+El goblin lleno de adrenalina se avalanza sobre ti, y ahi se termina la aventura.
 %
 
-Sala6
-pene1
-pene2
+Llega a una sala iluminada con luz azul y un ada se hacerca a nuestro heroe
+parece que es su dia de suerte, despues de repetir sin cesar "hey listen!" el ada le cura de sus heridas.
+nunca ocurre
 %
 
-Sala7
-pene1
-pene2
+De lejos se empiezan a escuchar un ruido de voces, cuando llega ve un monton de guallinas preguntandose: ¿Que llego antes en huevo o la guallina?
+A eso nuestro aventurero para no ofender a nadie dice: "no se no soy 100tifico", y continua caminando.
+Ni el huevo ni la guallina eran respuestas correctas, la mita de las guallinas se ofenden y le picotean.
 %
 
-Sala8
-pene1
-pene2
+Entra en una sala donde hay un olor poco soportable, de ella aparece un Orco gritando: "Ogror Machaca"
+Despues de un largo rato, de un tenso y oloroso combate el humano sale victorioso pero no mas limpio.
+El aventurero ya al limite de la inconsciencia por el olor no aguanta los golpes y termina de bocadillo.
+%
+
+Contrariamente a otras salas llega a una donde huele bien, una anciana esta preparando lo que parece ser una sopa.
+La amable anciana le invita a probar, y milagrosamente se siente mucho mejor.
+nunca ocurre.
 %
 
 Sala9
