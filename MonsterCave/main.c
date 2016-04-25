@@ -37,10 +37,10 @@ void creaHistoria(Player* p)
 	int x ;
 	int j;
 	int i=0;
-
+	srand(time(NULL));
 	while (i < 6)
 	{
-		int r = rand() % 15 + 1 ;
+		int r = rand() % 14 + 1 ;
 
 		for (x = 0; x < i; x++)
 		{
@@ -63,14 +63,13 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 {
 
 	// elige una sala aleatoria
-	int numSala = p->historia[p->numerodesalas] ;//= rand() % 15;
-
+	int numSala = p->historia[p->numerodesalas] ;
 
 
 	if (p->numerodesalas <= 6)
 	{
 		//A donde quieres ir
-		printf("¿Por donde deseas ir? N/S/E/W /n");
+		printf("¿Por donde deseas ir? N/S/E/W \n");
 		fflush(stdout);
 		char r;
 		while (r != 'N' && r != 'S' && r != 'E' && r != 'W' && r != 'n'
@@ -89,7 +88,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 			sleep(1);
 
 			//supongamos que recibes un array de salas y abres la sala x entonces te aparece un acertijo
-			printf("Sala %d: \n %s  \n", numSala + 1, s[numSala].textosDeSala[0]);
+			printf("Sala %d: \n %s  \n", numSala, s[numSala].textosDeSala[0]);
 			fflush(stdout);
 			sleep(1);
 			printf("Opcion 1 %s \n", s[numSala].textosDeSala[3]);
@@ -127,15 +126,13 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 			//Limpia la consola
 //			system("cls");
-			p->historia[p->numerodesalas+1]=numSala;
 
-			//Sale del bucle
 
 
 		}
 		else if (s[numSala].tipo == 1)//sala de peleas
 		{
-			printf("Sala %d  \n%s", numSala + 1, s[numSala].textosDeSala[0]);
+			printf("Sala %d  \n%s", numSala +1, s[numSala].textosDeSala[0]);
 			//Te has encontrado con un mega monstruo feo
 			fflush(stdout);
 			//Busca el monstruo con el codigo de sala
@@ -161,7 +158,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 				if(p->vida<=0)//Game over
 				{
-					printf("%s /nVaya, parece que tu vida esta a 0", s[numSala].textosDeSala[2]);
+					printf("%s /nVaya, parece que tu vida esta a 0", s[numSala-1].textosDeSala[2]);
 					fflush(stdout);// Texto de game over
 					char m;
 					m =getchar();
@@ -198,11 +195,11 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 				case 1:
 
 					vida=vida-20;
-					printf("Dañas al monstruo con tu legendaria espadad de madera ");
+					printf("Dañas al monstruo con tu legendaria espadad de madera,");
 					fflush(stdout);
 					sleep(2);
 					p->vida = p->vida - 10;
-					printf("Sin embargo el monstruo te goplpea y obviamente recibes daño. ");
+					printf("Sin embargo el monstruo te goplpea y obviamente recibes daño. \n");
 					fflush(stdout);
 					sleep(1);
 
@@ -214,7 +211,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 					fflush(stdout);
 					p->vida = p->vida - 7;
 					sleep(2);
-					printf("te escupe y te da asco, genial, ahora tienes baba de llama. ");
+					printf("te escupe y te da asco, genial, ahora tienes baba de llama. \n");
 					sleep(1);
 					break;
 				case 3:
@@ -222,11 +219,11 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 					printf("Enfrias la sala muchisimo, ");
 					sleep(2);
 					p->vida = p->vida - 3;
-					printf(",genial ahora tienes un resfriado! ");
+					printf(",genial ahora tienes un resfriado!\n");
 					sleep(1);
 					break;
 				case 4:
-					printf("Aparece un obispo que te echa agua bendita, se curan tus heridas, \nun poco, mas bien casi nada, digamos que es placebo ");
+					printf("Aparece un obispo que te echa agua bendita, se curan tus heridas, un poco, mas bien casi nada, digamos que es placebo\n");
 					sleep(1);
 					p->vida = p->vida + 20;
 					if(p->vida>100)
@@ -237,7 +234,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 					break;
 				default:
 
-					printf("La proxima vez ataque subnormal");
+					printf("La proxima vez ataque subnormal\n");
 					fflush(stdout);
 					sleep(2);
 					p->vida = p->vida - 10;
@@ -257,7 +254,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 		else if (s[numSala].tipo == 2)// sala en la que consigues algo
 
 		{
-			printf("Sala %d  \n %s", numSala + 1, s->textosDeSala[0]);
+			printf("Sala %d  \n %s", numSala , s->textosDeSala[0]);
 			fflush(stdout);
 			p->vida=100;
 			int k=0;
@@ -271,10 +268,14 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 		}
 
-		p->numerodesalas=p->numerodesalas+1;
 
 
 	}
+
+	p->numerodesalas=p->numerodesalas+1;
+	printf("Numero de salas pasadas : %d\n",p->numerodesalas);
+	fflush(stdout);
+
 }
 
 int main()
@@ -287,21 +288,23 @@ int main()
 
 
 	cargarSalas(s);
-	printf("Hola 1");
-	fflush(stdout);
+
+
 	//system("cls");
 
 
 
 	Monstruo* monstruos=malloc(sizeof(Monstruo)*10);;
-	inicializarArrayMonstruos(monstruos);
-	printf("Hola 2");
-	fflush(stdout);
+//	inicializarArrayMonstruos(monstruos);
+//	printf("Hola 2");
+//	fflush(stdout);
 
 	creaHistoria(&pl);
-	printf("Hola 3");
+
 	fflush(stdout);
-	//Bucle constante
+
+
+//	Bucle constante
 	while (pl.vida>=1 && pl.numerodesalas<=6)
 	{
 		logicaUpdate(&pl ,s , monstruos);
