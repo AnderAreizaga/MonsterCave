@@ -10,14 +10,11 @@ Le saludas.
 #
 
 2
+1
 0
-0
-Te has encontrado con un mega monstruo feo el mega penexorus
-HAS FALLADO, PERECE EN LA MAZMORRA
+Te has encontrado con un mega monstruo feo el mega Progenitus
 VICTORIA,NO OLVIDES TU TOALLA
-LA
-ÑA
-PA
+HAS FALLADO, PERECE EN LA MAZMORRA
 #
 
 3
@@ -32,134 +29,102 @@ No tengo tiempo dejame pasar!
 #
 
 4
+1
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Te adentras en una sala llena de latas con una silueta extraña al fondo. De repente ves a un hombre pasar corriendo que sin querer hace un ruido cerca de ti. La silueta se da la vuelta y te ataca gritando: MI LATAA!!
+Yo solo queria mi lat.... *Goblin muere*
+SUCIO TRAIDOR DONDE ESCONDES MI LATA. *Golpea tu cabeza fuertemente y mueres sollozando*
 #
 
 5
+3
 0
-2
 Llegas donde un Ada y dice: Hey listen! *Te cura*
-GluGLu
-GluGLu
-LA
-ÑA
-PA
 #
 
 6
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+3
+Te encuentras en una sala donde un millon de pollos locos se entretienen gritando: ¿Que llego antes el huevo o la gallina?
+Bien hecho, ya puedes graduarte en estupidez maxima.
+Los pollos te atacan furiosamente.
+El huevo
+La gallina
+No se no soy 100tifico
 #
 
 7
+1
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Nada mas entrar tu nariz detecta un olor muy peculiar, como si estuvieses en mordor cerca de lo mas apestoso del lugar. Segundos mas tarde un orco salta gritando: OGROR MACHACA
+El orco habra muerto pero su peste ha aumentado considerablemente T_T
+OGROR DESTRUYE HUMANO.
 #
 
 8
+3
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
-
+En medio de la sala se encuentra una amable anciana con un caldero hirviendo. Muy amablemente te invita a acercarte y a probar su sopa. *Te curas*
 #
+
 9
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+1
+Te adentras en una sala llena de vacas moradas. Aparte de eso te das cuenta de que un racimo de uvas cuelga de la pared. Tu tripa ruge considerablemente asi que te planteas comerte unas pocas ¿Cual es tu decision?
+El olor de las vacas comiendo uvas te habia vuelto loco pero la locura ha desaparecido y puedes continuar.
+Hiciste mal en comer y ahora estas cagando sangre. *Mueres desangrado"
+Corre gritando "THE GRAPE IS A LIE"
+Como unas pocas, seguro que me sientan bien.
+Mejor me como una vaca que seguro que sabe mejor.
 #
 
 10
+1
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Te encuentras en una sala llena de hierba y bichos raros. De repente te cae un rayo en la cabeza, que por suerte no te hace nada, pero al mirar atras ves un pekachu furioso.
+GOTTA CATCH EM AAALLL
+Mueres electrocutado por un bonito pekachu, que tristeza.
 #
 
 11
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+1
+Te encuentras en una sala llena de charcos de agua y una puerta con un boton. ¿Qué haces?
+Sin querer has presionado el boton que abre la puerta debajo de uno de los charcos. Puedes continuar.
+Botones falsos JA JA. *explotaste cual palomita*
+Saltas en los charcos de agua como un niño en un acuapark
+Presionas el boton de la puerta
+Decides buscar un boton diferente el cual encuentras detras de una planta y lo presionas
 #
 
 12
+1
 0
-2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Nada mas entrar escuchas a un loco gritar: GIAAAAAAAAAAAAAAAAAAAAH. Le miras con cara de soprendido a lo que el se abalanza sobre ti a una velocidad estruendosa.
+Felicidades, eres mas fuerte que goku, toma tu logro de recompensa. *Logro no obtenido para conseguirlo loggeate en steam*
+POR FIN TE DERROTE FREEZER
 #
 
 13
-0
 2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+0
+Te encuentras un altar lleno de velas y un cuenco extraño lleno de agua encima. Te lo bebes sin pensarlo. *Te curas*
 #
 
 14
 0
 2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Te encuentras en una sala llena de hormigas rojas intentando llevarse un trozo de pan a su hormiguero. Sin embargo la sala esta llena de pinchos alrededor y solo puedes pasar si destrulles su hormiguero. ¿que haces?
+Al saltar te tropiezas y matas una hormiga sin querer. Sus amigas llorando te maldicen y te dejan pasar ya que tendran que asistir a un funeral.
+Tu estrategia no funciona y las hormigas te atrapan y te llevan a su hormiguero donde te tocara limpiar vestido como una maid.
+Pasas y te das la vuelta
+Intentas saltar el hormiguero
+Coges un martillo adecuadamente puesto al lado tuyo y destrulles el hormiguero.
 #
 
 15
 0
 2
-FRASE DE ENTRADA
-FRASE DE DERROTA
-FRASE DE VICTORIA
-OPCION 1
-OPCION 2
-OPCION 3
+Te encuentras con una cleriga muy guapa que te pregunta por tu viaje. Le contestas que bien y te dice que vale. *Continuas tu camino sin entretenerte*
 #
 @
