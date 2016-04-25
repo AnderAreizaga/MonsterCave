@@ -282,6 +282,7 @@ int main()
 {
 
 	Player pl;
+	Historia * h1= malloc(sizeof(Historia)*30);
 	crearPlayer(&pl);
 
 	Sala* s = malloc(sizeof(Sala)*30);
@@ -294,10 +295,12 @@ int main()
 
 
 
-	Monstruo* monstruos=malloc(sizeof(Monstruo)*10);;
-//	inicializarArrayMonstruos(monstruos);
-//	printf("Hola 2");
-//	fflush(stdout);
+	Monstruo* monstruos=malloc(sizeof(Monstruo)*10);
+	inicializarArrayMonstruos(monstruos);
+
+	cargarHistoria(h1);
+
+	fflush(stdout);
 
 	creaHistoria(&pl);
 
@@ -320,5 +323,9 @@ int main()
 	printf("----------------- ENHORABUENA, HAS SALIDO DE LA CUEVA, AHORA SIGUE CON TU MORTAL VIDA -------------------");
 	fflush(stdout);
 	}
+
+	printHistoria(&pl,h1);
+
+
 	return 0;
 }

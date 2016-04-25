@@ -48,22 +48,30 @@ void clearIfNeeded(char *str, int max_line)
 
 void printHistoria(Player* pl, Historia* historia)
 {
+	printf("hola");
+	fflush(stdout);
+
 	FILE *fichero;
 	fichero = fopen("tuHistoria.txt", "w");
 
-	fprintf(fichero,"Era una oscura mañana de otoño, %s se disponía a empezar su primer dia en su nuevo trabajo.\nEra su oportunidad de servir a la sociedad y por primera vez cumplir su sueño  de ser un héroe,\nalguien que combatiera el mal y salvara al mundo varias veces. Pero sin embargo no era tal\ny como se esperaba, barrer el suelo en la taberna más sucia del barrio no era tan emocionante como pensaba que sería\ncuando le dijeron que su misión principal sería combatir la suciedad con esa escoba. Pero un día unos mercenarios entraron\nmientras él trabajaba, llegaron con el objetivo de cumplir la mision mas dificil que podría\nhaber llegado a los oídos de nuestro protagonista: ''Rescatar la gallina de los huevos dorados''\n"
-,pl->name);
-
-	int i=0;
-	for(;i<pl->numerodesalas;i++)
+	if(fichero!=NULL)
 	{
-		fprintf(fichero,"%s",historia[(pl->historia[i]-1)].frases[0]);
-		if(i<pl->numerodesalas-1){
-			fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[1]);
-		}else{
-			fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[2]);
-		}
+		printf("La historia de %s , sera contada por los juglares, pase por la salida para recoger su escrito :)\n", pl->name);
+		fprintf(fichero,"Life of %s \n\n", pl->name);
+		fprintf(fichero,"Era una oscura mañana de otoño, %s se disponía a empezar su primer dia en su nuevo trabajo.\nEra su oportunidad de servir a la sociedad y por primera vez cumplir su sueño  de ser un héroe,\nalguien que combatiera el mal y salvara al mundo varias veces. Pero sin embargo no era tal\ny como se esperaba, barrer el suelo en la taberna más sucia del barrio no era tan emocionante como pensaba que sería\ncuando le dijeron que su misión principal sería combatir la suciedad con esa escoba. Pero un día unos mercenarios entraron\nmientras él trabajaba, llegaron con el objetivo de cumplir la mision mas dificil que podría\nhaber llegado a los oídos de nuestro protagonista: ''Rescatar la gallina de los huevos dorados''\n"
+				,pl->name);
 
+		int i=0;
+		for(;i<pl->numerodesalas;i++)
+		{
+			fprintf(fichero,"%s",historia[(pl->historia[i]-1)].frases[0]);
+			if(i<pl->numerodesalas-1){
+				fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[1]);
+			}else{
+				fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[2]);
+			}
+
+		}
 	}
 
 	fclose(fichero);
