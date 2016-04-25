@@ -2,8 +2,8 @@
 0
 2
 Llegas en frente de un estatua ¿que haces?
-Se abre una puerta y puedes seguir
 Dardos salen de los ojos de la estatua.
+Se abre una puerta y puedes seguir
 Estas intrigado y la tocas.
 La observas y sigues caminando.
 Le saludas.
@@ -13,16 +13,16 @@ Le saludas.
 1
 0
 Te has encontrado con un mega monstruo feo el mega Progenitus
-VICTORIA,NO OLVIDES TU TOALLA
 HAS FALLADO, PERECE EN LA MAZMORRA
+VICTORIA,NO OLVIDES TU TOALLA
 #
 
 3
 0
 1
 Llegas delante de un hombre bloqueando la salida te pregunta:¿Que es oro por fuera y blanco por dentro?
-Asiente y se aparta dejandote pasar
 Te hechiza y dice Vuelve a intentar!!
+Asiente y se aparta dejandote pasar
 EL PLATANO
 ¿Una pista?
 No tengo tiempo dejame pasar!
@@ -32,8 +32,8 @@ No tengo tiempo dejame pasar!
 1
 0
 Te adentras en una sala llena de latas con una silueta extraña al fondo. De repente ves a un hombre pasar corriendo que sin querer hace un ruido cerca de ti. La silueta se da la vuelta y te ataca gritando: MI LATAA!!
-Yo solo queria mi lat.... *Goblin muere*
 SUCIO TRAIDOR DONDE ESCONDES MI LATA. *Golpea tu cabeza fuertemente y mueres sollozando*
+Yo solo queria mi lat.... *Goblin muere*
 #
 
 5
@@ -46,8 +46,8 @@ Llegas donde un Ada y dice: Hey listen! *Te cura*
 0
 3
 Te encuentras en una sala donde un millon de pollos locos se entretienen gritando: ¿Que llego antes el huevo o la gallina?
-Bien hecho, ya puedes graduarte en estupidez maxima.
 Los pollos te atacan furiosamente.
+Bien hecho, ya puedes graduarte en estupidez maxima.
 El huevo
 La gallina
 No se no soy 100tifico
@@ -57,8 +57,8 @@ No se no soy 100tifico
 1
 0
 Nada mas entrar tu nariz detecta un olor muy peculiar, como si estuvieses en mordor cerca de lo mas apestoso del lugar. Segundos mas tarde un orco salta gritando: OGROR MACHACA
-El orco habra muerto pero su peste ha aumentado considerablemente T_T
 OGROR DESTRUYE HUMANO.
+El orco habra muerto pero su peste ha aumentado considerablemente T_T
 #
 
 8
@@ -71,8 +71,8 @@ En medio de la sala se encuentra una amable anciana con un caldero hirviendo. Mu
 0
 1
 Te adentras en una sala llena de vacas moradas. Aparte de eso te das cuenta de que un racimo de uvas cuelga de la pared. Tu tripa ruge considerablemente asi que te planteas comerte unas pocas ¿Cual es tu decision?
-El olor de las vacas comiendo uvas te habia vuelto loco pero la locura ha desaparecido y puedes continuar.
 Hiciste mal en comer y ahora estas cagando sangre. *Mueres desangrado"
+El olor de las vacas comiendo uvas te habia vuelto loco pero la locura ha desaparecido y puedes continuar.
 Corre gritando "THE GRAPE IS A LIE"
 Como unas pocas, seguro que me sientan bien.
 Mejor me como una vaca que seguro que sabe mejor.
@@ -82,16 +82,16 @@ Mejor me como una vaca que seguro que sabe mejor.
 1
 0
 Te encuentras en una sala llena de hierba y bichos raros. De repente te cae un rayo en la cabeza, que por suerte no te hace nada, pero al mirar atras ves un pekachu furioso.
-GOTTA CATCH EM AAALLL
 Mueres electrocutado por un bonito pekachu, que tristeza.
+GOTTA CATCH EM AAALLL
 #
 
 11
 0
 1
 Te encuentras en una sala llena de charcos de agua y una puerta con un boton. ¿Qué haces?
-Sin querer has presionado el boton que abre la puerta debajo de uno de los charcos. Puedes continuar.
 Botones falsos JA JA. *explotaste cual palomita*
+Sin querer has presionado el boton que abre la puerta debajo de uno de los charcos. Puedes continuar.
 Saltas en los charcos de agua como un niño en un acuapark
 Presionas el boton de la puerta
 Decides buscar un boton diferente el cual encuentras detras de una planta y lo presionas
@@ -101,8 +101,8 @@ Decides buscar un boton diferente el cual encuentras detras de una planta y lo p
 1
 0
 Nada mas entrar escuchas a un loco gritar: GIAAAAAAAAAAAAAAAAAAAAH. Le miras con cara de soprendido a lo que el se abalanza sobre ti a una velocidad estruendosa.
-Felicidades, eres mas fuerte que goku, toma tu logro de recompensa. *Logro no obtenido para conseguirlo loggeate en steam*
 POR FIN TE DERROTE FREEZER
+Felicidades, eres mas fuerte que goku, toma tu logro de recompensa. *Logro no obtenido para conseguirlo loggeate en steam*
 #
 
 13
@@ -115,8 +115,8 @@ Te encuentras un altar lleno de velas y un cuenco extraño lleno de agua encima. 
 0
 2
 Te encuentras en una sala llena de hormigas rojas intentando llevarse un trozo de pan a su hormiguero. Sin embargo la sala esta llena de pinchos alrededor y solo puedes pasar si destrulles su hormiguero. ¿que haces?
-Al saltar te tropiezas y matas una hormiga sin querer. Sus amigas llorando te maldicen y te dejan pasar ya que tendran que asistir a un funeral.
 Tu estrategia no funciona y las hormigas te atrapan y te llevan a su hormiguero donde te tocara limpiar vestido como una maid.
+Al saltar te tropiezas y matas una hormiga sin querer. Sus amigas llorando te maldicen y te dejan pasar ya que tendran que asistir a un funeral.
 Pasas y te das la vuelta
 Intentas saltar el hormiguero
 Coges un martillo adecuadamente puesto al lado tuyo y destrulles el hormiguero.

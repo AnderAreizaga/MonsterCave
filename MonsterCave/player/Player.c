@@ -48,7 +48,6 @@ void clearIfNeeded(char *str, int max_line)
 
 void printHistoria(Player* pl, Historia* historia)
 {
-	printf("hola");
 	fflush(stdout);
 
 	FILE *fichero;
