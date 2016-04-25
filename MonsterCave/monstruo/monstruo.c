@@ -20,7 +20,7 @@ void inicializarArrayMonstruos(Monstruo* monstruos){
 	do{
 		fgets(nom, 25, fichero);
 		if(nom[0]!='&'&&nom[0]!='%'){
-			m.nombre=malloc(sizeof(char)*strlen(nom));
+			m.nombre=malloc(sizeof(char)*(strlen(nom)+5));
 			int a=0;
 			for(a=0;a<strlen(nom)+1;a++)
 			{
@@ -39,7 +39,7 @@ void inicializarArrayMonstruos(Monstruo* monstruos){
 			do{
 				fgets(str, 199, fichero);
 				if(str[0]!='%'&&str[0]!='&'){
-					m.interacciones[z]=malloc(strlen(str)+1);
+					m.interacciones[z]=malloc(strlen(str)+3);
 					for(a=0;a<strlen(str)+1;a++)
 					{
 						m.interacciones[z][a]=str[a];
