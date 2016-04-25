@@ -14,6 +14,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+/*
+ * No se usa para nada pero imprime un murloc por pantalla
+ */
 void printFile(char *name)
 {
 	char c;
@@ -32,15 +35,20 @@ void printFile(char *name)
 	fclose(fichero);
 
 }
+
+/*
+ * Este metodo crea la historia sin repeticiones
+ */
 void creaHistoria(Player* p)
 {
+	// elige una sala aleatoria
 	int x ;
 	int j;
 	int i=0;
 	srand(time(NULL));
 	while (i < 6)
 	{
-		int r = rand() % 14 + 1 ;
+		int r = rand() % 14+1;
 
 		for (x = 0; x < i; x++)
 		{
@@ -51,19 +59,15 @@ void creaHistoria(Player* p)
 		}
 		if (x == i)
 		{
-			p->historia[i++] = r+1;
+			p->historia[i++] = r;
 		}
-	}
-	for (j = 0; j < 6; j++)
-	{
-		printf("%i ", p->historia[j]);
 	}
 }
 void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 {
 
-	// elige una sala aleatoria
-	int numSala = p->historia[p->numerodesalas] ;
+
+	int numSala = p->historia[p->numerodesalas]-1 ;
 
 
 	if (p->numerodesalas <= 6)
@@ -71,7 +75,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 		//A donde quieres ir
 		printf("¿Por donde deseas ir? N/S/E/W \n");
 		fflush(stdout);
-		char r;
+		char r='0';
 		while (r != 'N' && r != 'S' && r != 'E' && r != 'W' && r != 'n'
 				&& r != 's' && r != 'e' && r != 'w')
 		{
@@ -88,15 +92,18 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 			sleep(1);
 
 			//supongamos que recibes un array de salas y abres la sala x entonces te aparece un acertijo
-			printf("Sala %d: \n %s  \n", numSala, s[numSala].textosDeSala[0]);
+			printf("Sala %d: \n %s  \n", numSala+2, s[numSala].textosDeSala[0]);
 			fflush(stdout);
 			sleep(1);
 			printf("Opcion 1 %s \n", s[numSala].textosDeSala[3]);
 			fflush(stdout);
+			sleep(1);
 			printf("Opcion 2 %s \n", s[numSala].textosDeSala[4]);
 			fflush(stdout);
+			sleep(1);
 			printf("Opcion 3 %s \n", s[numSala].textosDeSala[5]);
 			fflush(stdout);
+			sleep(1);
 			int elec;
 			int corr = s[numSala].respuestaCorr;
 			do{
@@ -115,35 +122,34 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 					printf("Pierdes 20 de vida\n");
 					fflush(stdout);
 					p->vida=p->vida-20;
+
 				}
 
 			}while(corr!=elec);
-//			system("cls");
 			//texto de salida de la
 			printf("%s\n",s[numSala].textosDeSala[2]);
 			fflush(stdout);
 
 
-			//Limpia la consola
-//			system("cls");
+
 
 
 
 		}
 		else if (s[numSala].tipo == 1)//sala de peleas
 		{
-			printf("Sala %d  \n%s", numSala +1, s[numSala].textosDeSala[0]);
+			printf("Sala %d  \n%s", numSala+2, s[numSala].textosDeSala[0]);
 			//Te has encontrado con un mega monstruo feo
 			fflush(stdout);
 			//Busca el monstruo con el codigo de sala
 			int i=0;
-			for(;i<1;i++ )//OJOOOO EL  con el numero de monstruos en el array esta en 1 para probar
+			for(;i<5;i++ )//OJOOOO EL  con el numero de monstruos en el array esta en 1 para probar
 			{
 
 
 				if(s[numSala].codSala == m[i].codsala)
 				{
-
+					printf("%d" ,m[i].codsala);
 
 					break;
 				}
@@ -158,7 +164,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 				if(p->vida<=0)//Game over
 				{
-					printf("%s /nVaya, parece que tu vida esta a 0", s[numSala-1].textosDeSala[2]);
+					printf("%s /nVaya, parece que tu vida esta a 0", s[numSala].textosDeSala[2]);
 					fflush(stdout);// Texto de game over
 					char m;
 					m =getchar();
@@ -248,22 +254,21 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 
 			//texto de salida de la
-			printf("\n%s", s->textosDeSala[2]);
+			if(p->vida>1)//Game over
+			{
+			printf("\n%s", s[numSala].textosDeSala[2]);
 			fflush(stdout);
+			}
 		}
 		else if (s[numSala].tipo == 2)// sala en la que consigues algo
 
 		{
-			printf("Sala %d  \n %s", numSala , s->textosDeSala[0]);
+			printf("Sala %d  \n %s\n", numSala+2 , s[numSala].textosDeSala[0]);
 			fflush(stdout);
-			p->vida=100;
-			int k=0;
-			for(;k<p->vida;k++)
-			{
-				printf("|");
-				fflush(stdout);
-				sleep(0.005);
-			}
+			sleep(3);
+			printf("Tomate un ratete para respirar \n");
+			fflush(stdout);
+			sleep(1);
 
 
 		}
@@ -272,7 +277,7 @@ void logicaUpdate( Player* p, Sala* s, Monstruo* m)
 
 	}
 
-	p->numerodesalas=p->numerodesalas+1;
+	p->numerodesalas=p->numerodesalas+1;//Por el que le habiamos quitado al principio para que no diera out of boundsMike
 	printf("Numero de salas pasadas : %d\n",p->numerodesalas);
 	fflush(stdout);
 
@@ -283,11 +288,12 @@ int main()
 
 	Player pl;
 	Historia * h1= malloc(sizeof(Historia)*30);
+	//Se crea el jugador
 	crearPlayer(&pl);
 
 	Sala* s = malloc(sizeof(Sala)*30);
 
-
+	//Se cargan las salas de fichero
 	cargarSalas(s);
 
 
@@ -296,8 +302,9 @@ int main()
 
 
 	Monstruo* monstruos=malloc(sizeof(Monstruo)*10);
+	//Se crean los monstruos
 	inicializarArrayMonstruos(monstruos);
-
+	//Se carga la historia
 	cargarHistoria(h1);
 
 	fflush(stdout);

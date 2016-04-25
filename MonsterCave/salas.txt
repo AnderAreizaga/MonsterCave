@@ -3,7 +3,7 @@
 2
 Llegas en frente de un estatua ¿que haces?
 Dardos salen de los ojos de la estatua.
-Se abre una puerta y puedes seguir
+Se abre una puerta y puedes seguir.
 Estas intrigado y la tocas.
 La observas y sigues caminando.
 Le saludas.
@@ -32,12 +32,12 @@ No tengo tiempo dejame pasar!
 1
 0
 Te adentras en una sala llena de latas con una silueta extraña al fondo. De repente ves a un hombre pasar corriendo que sin querer hace un ruido cerca de ti. La silueta se da la vuelta y te ataca gritando: MI LATAA!!
-SUCIO TRAIDOR DONDE ESCONDES MI LATA. *Golpea tu cabeza fuertemente y mueres sollozando*
 Yo solo queria mi lat.... *Goblin muere*
+SUCIO TRAIDOR DONDE ESCONDES MI LATA. *Golpea tu cabeza fuertemente y mueres sollozando*
 #
 
 5
-3
+2
 0
 Llegas donde un Ada y dice: Hey listen! *Te cura*
 #
@@ -46,11 +46,11 @@ Llegas donde un Ada y dice: Hey listen! *Te cura*
 0
 3
 Te encuentras en una sala donde un millon de pollos locos se entretienen gritando: ¿Que llego antes el huevo o la gallina?
-Los pollos te atacan furiosamente.
 Bien hecho, ya puedes graduarte en estupidez maxima.
+Los pollos te atacan furiosamente.
 El huevo
 La gallina
-No se no soy 100tifico
+LA CAJA, LA CAJA
 #
 
 7
@@ -62,7 +62,7 @@ El orco habra muerto pero su peste ha aumentado considerablemente T_T
 #
 
 8
-3
+2
 0
 En medio de la sala se encuentra una amable anciana con un caldero hirviendo. Muy amablemente te invita a acercarte y a probar su sopa. *Te curas*
 #
@@ -83,7 +83,7 @@ Mejor me como una vaca que seguro que sabe mejor.
 0
 Te encuentras en una sala llena de hierba y bichos raros. De repente te cae un rayo en la cabeza, que por suerte no te hace nada, pero al mirar atras ves un pekachu furioso.
 Mueres electrocutado por un bonito pekachu, que tristeza.
-GOTTA CATCH EM AAALLL
+GOTTA CATCH EM AAALLL.
 #
 
 11
@@ -100,7 +100,7 @@ Decides buscar un boton diferente el cual encuentras detras de una planta y lo p
 12
 1
 0
-Nada mas entrar escuchas a un loco gritar: GIAAAAAAAAAAAAAAAAAAAAH. Le miras con cara de soprendido a lo que el se abalanza sobre ti a una velocidad estruendosa.
+Nada mas entrar escuchas a un loco gritar: KAME HAME-HA!!!. Le miras con cara de soprendido a lo que el se abalanza sobre ti a una velocidad estruendosa.
 POR FIN TE DERROTE FREEZER
 Felicidades, eres mas fuerte que goku, toma tu logro de recompensa. *Logro no obtenido para conseguirlo loggeate en steam*
 #
@@ -123,8 +123,8 @@ Coges un martillo adecuadamente puesto al lado tuyo y destrulles el hormiguero.
 #
 
 15
-0
 2
-Te encuentras con una cleriga muy guapa que te pregunta por tu viaje. Le contestas que bien y te dice que vale. *Continuas tu camino sin entretenerte*
+0
+Te encuentras con una cleriga muy guapa que te pregunta por tu viaje. La charla amistosa te llena de Determinacion. 
 #
 @
