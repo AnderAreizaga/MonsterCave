@@ -68,7 +68,7 @@ void printHistoria(Player* pl, Historia* historia)
 				fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[1]);
 				fprintf(fichero,"Encuentra la salida y vuelve a casa habiendo cumplido su sueño");
 			}
-			if(i<pl->numerodesalas-1){
+			else if(i<pl->numerodesalas-1){
 				fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[1]);
 			}else{
 				fprintf(fichero,"%s",historia[pl->historia[i]-1].frases[2]);
